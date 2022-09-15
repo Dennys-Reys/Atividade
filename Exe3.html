@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercearia das meninas</title>
+</head>
+<body>
+     <h1>Mercearia das meninas</h1>
+    <select id="sel_merc">
+        <option value="">-Escolha um combo-</option>
+        <option value="45.50">Arroz, Feijão e Carne</option>
+        <option value="35.10">Arroz, Bananas e Melancia</option>
+        <option value="42.50">Oleo, Feijão e Peixe</option>
+        <option value="41.30">Açaí, Brocólis e Carne</option>
+
+</select>
+<button onclick="calculo()">Ver preço</button> <br> <br>
+    
+</body>
+</html>
+<script>
+    function calculo(){
+        var combo = Number (sel_merc.value)
+        alert (`Isso custa R$${combo.toFixed(2)}`)
+
+    }
+</script>
